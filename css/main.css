@@ -1,0 +1,383 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000000;
+
+  background-color: #fff;
+
+}
+
+.wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner {
+  padding-left: 80px;
+  padding-top: 149px;
+}
+
+.images {
+  position: absolute;
+  top: 187px;
+  right: 0;
+  z-index: 200;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  line-height: 120%;
+  font-weight: 700;
+
+  color: #000000;
+  margin-bottom: 21px;
+}
+
+.description:last-of-type {
+  margin-bottom: 10px;
+}
+
+.inner-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 58px;
+}
+
+.inner-button image {
+  display: block;
+
+}
+
+.wrapper-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-right: 21px;
+}
+
+.wrapper-refuse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.buy {
+  background-color: #FBCB03;
+  border-radius: 12px;
+  border: none;
+  width: 210px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.buy:hover {
+  background-color: #E6B901;;
+}
+
+.refuse {
+  background-color: #000000;
+  border-radius: 12px;
+  border: none;
+  width: 210px;
+  height: 65px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.refuse:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper-description {
+  width: 505px;
+}
+
+
+@keyframes black-stripe {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(0, -100px);
+  }
+}
+
+.stripes-wrapper {
+  transform: translate(-50%, -50%) rotate(45deg);
+  top: 0;
+  left: 80%;
+  position: absolute;
+}
+
+.stripes {
+  animation-name: black-stripe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.stripes__stripe {
+  background-color: #000000;
+  height: 50px;
+  width: 450px;
+  margin-top: 50px;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left:22.7%;
+  width: 1400px;
+  height: 803px;
+  background: #FFFFFF;
+  display: none;
+  z-index: 400;
+}
+
+.modal {
+  background-color: #ffffff;
+  width: 610px;
+  height: 498px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-right: 44px;
+}
+
+.inner-modal {
+  display: flex;
+  margin-top: 87px;
+}
+
+@keyframes fadeInDown { /* Сама анимация */
+  0% { /* Старт анимации */
+    opacity: 0;
+    transform: translate3d(0px, -100%, 0px);
+  }
+  100% { /* в финале анимации - финал это заданная 0.55s */
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.show {
+  display: block;
+  animation-duration: 1.5s; /* Время работы анимации */
+  animation-fill-mode: both; /* Поведение анимации */
+  animation-name: fadeInDown;
+}
+
+.offline {
+  width: 292px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  margin: 0;
+}
+
+.wrapper-heading {
+  display: flex;
+  margin-left: 25px;
+  height: 52px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.wrapper-heading img {
+  margin-right: 20px;
+}
+
+.form {
+  display: flex;
+}
+
+.form-input {
+  width: 334px;
+  height: 50px;
+  background: #F8F8F8;
+  border-radius: 11px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.32);
+  border: none;
+  margin-left: 53px;
+  margin-bottom: 100px;
+}
+
+.form-button {
+  width: 161px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 11px;
+  padding: 16px 32px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.data {
+  width: 237px;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.32);
+  margin-bottom: 40px;
+  margin-left: 53px;
+}
+
+.data span {
+  text-decoration: underline;
+}
+
+.modal-interview {
+  width: 610px;
+  height: 498px;
+  background: #000000;
+  border-radius: 20px;
+}
+
+.interview-description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  color: #FFFFFF;
+  align-content: center;
+}
+
+.heading-interview {
+  display: flex;
+  height: 60px;
+  margin-top: 38px;
+  margin-bottom: 82px;
+}
+
+.heading-interview img {
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.interview-list {
+  width: 441px;
+  margin: 0 auto;
+
+
+}
+
+.interview-item {
+  width: 441px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 45px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 50px;
+  /* or 18px */
+  text-align: center;
+  color: #FFFFFF;
+  list-style-type: none
+}
+
+.interview-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.interview-item:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.wrapper-back {
+  display: flex;
+  height: 36px;
+  margin-top: 75px;
+}
+
+.wrapper-back img {
+  align-content: center;
+  margin-right: 19px;
+}
+
+.link-back {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  /* or 36px */
+  color: #000000;
+  align-content: center;
+  text-decoration: none;
+}
